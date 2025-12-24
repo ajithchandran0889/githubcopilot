@@ -84,10 +84,11 @@ section h3 {
 }
 
 /* Bulleted inline pills for participants */
+
 .participants-list {
-  list-style: disc inside;
+  list-style: none;
   margin: 0;
-  padding-left: 18px;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
@@ -102,6 +103,22 @@ section h3 {
   font-size: 13px;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03);
   display: inline-block;
+}
+
+.participant .delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.participant .delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Fallback message when no participants */
