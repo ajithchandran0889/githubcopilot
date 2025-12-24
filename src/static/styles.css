@@ -70,8 +70,45 @@ section h3 {
   color: #0066cc;
 }
 
-.activity-card p {
-  margin-bottom: 8px;
+/* Participants section styling */
+.participants-section {
+  margin-top: 12px;
+  padding-top: 8px;
+  border-top: 1px dashed #eee;
+}
+
+.participants-section h5 {
+  margin: 6px 0 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Bulleted inline pills for participants */
+.participants-list {
+  list-style: disc inside;
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.participant {
+  background: #ffffff;
+  border: 1px solid #e6eef8;
+  color: #0b3a66;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
+  display: inline-block;
+}
+
+/* Fallback message when no participants */
+.no-participants {
+  color: #777;
+  font-style: italic;
+  margin: 4px 0;
 }
 
 .form-group {
